@@ -56,8 +56,8 @@ The result is a small but realistic model of how enterprises keep, for example, 
    PC2 (IT)    ──┘
 ```
 
-> 📸 *Add your Packet Tracer screenshot here:*
-> `![Topology](screenshots/topology.png)`
+<img width="2560" height="1297" alt="Network Segmentation " src="https://github.com/user-attachments/assets/8efd8653-5921-4ce8-abd1-682051af8508" />
+
 
 ### VLAN & Addressing Plan
 
@@ -119,7 +119,11 @@ Each PC's default gateway points to **its own VLAN's** router subinterface.
 | PC1 | 192.168.10.11 | 255.255.255.0 | 192.168.10.1 |
 | PC2 | 192.168.20.10 | 255.255.255.0 | 192.168.20.1 |
 
-> 📸 *Screenshot suggestion:* `![Router subinterfaces](screenshots/router-config.png)`
+<img width="912" height="674" alt="PC0 conf" src="https://github.com/user-attachments/assets/ca282d97-761a-40a9-8d94-ef451c2ff6d5" />
+<img width="909" height="676" alt="PC1 config" src="https://github.com/user-attachments/assets/329ce74a-55cb-4d01-abe7-a8466d52b796" />
+<img width="900" height="676" alt="PC2 config" src="https://github.com/user-attachments/assets/e3f6334a-8e74-485d-9bb7-a48095205af5" />
+
+
 
 ---
 
@@ -134,10 +138,11 @@ Each PC's default gateway points to **its own VLAN's** router subinterface.
 
 The key result: **the cross-VLAN ping only succeeds because of the router**. Remove the subinterfaces and that traffic dies — which is exactly the controlled-communication behavior we want.
 
-> 📸 *Screenshot suggestions:*
-> `![Same VLAN ping](screenshots/ping-same-vlan.png)`
-> `![Cross VLAN ping](screenshots/ping-cross-vlan.png)`
-> `![show vlan brief](screenshots/show-vlan.png)`
+<img width="898" height="676" alt="Ping test " src="https://github.com/user-attachments/assets/0995ec4b-3846-4a5f-b720-1ca1423fcf65" />
+<img width="898" height="799" alt="switch config" src="https://github.com/user-attachments/assets/d0f0c69d-b61a-477b-a5fc-a84920946dd0" />
+<img width="899" height="794" alt="Router config" src="https://github.com/user-attachments/assets/1557d7b4-fd0c-48f6-ab10-f850f86760bb" />
+
+
 
 ---
 
